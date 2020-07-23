@@ -49,3 +49,15 @@ console.log(multipleByThree(4));
 // function multiplyByThree(b) {
 // 	return 3 * b;
 // }
+
+const curriedMultiply = (a) => (b) => a * b;
+const curriedMultiply1 = (a) => (b) => {
+	return a * b;
+};
+const curriedMultiplyBy5 = curriedMultiply(5);
+var curriedMultiplyBy6 = curriedMultiply.bind(this, 6);
+
+console.log(curriedMultiply(5)(3));
+console.log(curriedMultiply1(5)(3));
+console.log(curriedMultiplyBy5(4));
+console.log(curriedMultiplyBy6(4));
