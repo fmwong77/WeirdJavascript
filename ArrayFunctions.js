@@ -12,12 +12,18 @@ const o2 = { id: 2 };
 const o3 = { id: 3 };
 
 const newArray = [o1, o2, o3];
-console.log(newArray.includes(o1)); // true
+console.log('include:', newArray.includes(o1)); // true
 
 // find
 console.log(
-	'find',
+	'find:',
 	myArray.find((ele) => ele === 5)
 );
 
 console.log(newArray.find((arr) => arr.id === 1));
+
+// reduce
+console.log(
+	'reduce:',
+	myArray.reduce((accumulator, curElement) => accumulator + curElement, 10)
+);
