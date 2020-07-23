@@ -40,6 +40,12 @@ function multiply(a, b) {
 
 var multipleByTwo = multiply.bind(this, 2);
 console.log(multipleByTwo(4));
+// function multiplyByTwo(b) {
+// 	return 2 * b;
+// }
 
 var multipleByThree = multiply.bind(this, 3);
 console.log(multipleByThree(4));
+// function multiplyByThree(b) {
+// 	return 3 * b;
+// }
