@@ -6,6 +6,7 @@ const user = {
 	},
 };
 
+// Object.assign,
 const copy = Object.assign({}, user);
 copy.location.city = 'Albany';
 console.log('origin:', user.location);
