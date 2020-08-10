@@ -59,10 +59,10 @@ let result = arr.reduce(
 
 console.log("flatten 2D array", result);
 
-// splice(start, how many)
+// splice(start, how many), returned the removed elements in array
 var myArr = ["Java", "PHP", "HTML", "jQuery", "Eclipse", "NetBeans"];
-console.log(myArr.splice(3, 2));
+// console.log(myArr.splice(2, 3));
 
-// slice(start, end)
+// slice(start, end), does not changed the original array, return the new array minus the removed element
 let slicedArr = myArr.slice(3, 4);
-console.log(slicedArr);
+console.log(myArr, slicedArr);
