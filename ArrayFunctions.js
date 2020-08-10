@@ -57,4 +57,4 @@ let result = arr.reduce(
   []
 );
 
-console.log("flatten array", result);
+console.log("flatten 2D array", result);
