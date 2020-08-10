@@ -58,3 +58,11 @@ let result = arr.reduce(
 );
 
 console.log("flatten 2D array", result);
+
+// splice(start, how many)
+var myArr = ["Java", "PHP", "HTML", "jQuery", "Eclipse", "NetBeans"];
+console.log(myArr.splice(3, 2));
+
+// slice(start, end)
+let slicedArr = myArr.slice(3, 4);
+console.log(slicedArr);
