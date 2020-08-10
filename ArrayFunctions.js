@@ -46,3 +46,15 @@ let sum1 = newObjArray.reduce(
 );
 
 console.log("reduce object:", sum1);
+
+// use reduce to flatten the array
+let arr = [
+  [1, 2, 3],
+  [4, 5],
+];
+let result = arr.reduce(
+  (accumulator, cur) => (accumulator = accumulator.concat(cur)),
+  []
+);
+
+console.log("flatten 2D array", result);
