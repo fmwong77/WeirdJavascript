@@ -12,18 +12,37 @@ const o2 = { id: 2 };
 const o3 = { id: 3 };
 
 const newArray = [o1, o2, o3];
-console.log('include:', newArray.includes(o1)); // true
+console.log("include:", newArray.includes(o1)); // true
 
-// find
+// find: return the value if found else return undefined
 console.log(
-	'find:',
-	myArray.find((ele) => ele === 5)
+  "find:",
+  myArray.find((ele) => ele === 10)
 );
 
-console.log(newArray.find((arr) => arr.id === 1));
+// find in object array: return the object if found else return undefined
+console.log(newArray.find((arr) => arr.id === 4));
 
 // reduce
 console.log(
-	'reduce:',
-	myArray.reduce((accumulator, curElement) => accumulator + curElement, 10)
+  "reduce array:",
+  myArray.reduce((accumulator, curElement) => accumulator + curElement, 10)
 );
+
+console.log(
+  "reduce object:",
+  newArray.reduce((sum, item) => sum + item.id, 0)
+);
+
+// reduce object must have initial value, remove parenthesis
+let newObjArray = [
+  { name: "ball", points: 2 },
+  { name: "coin", points: 3 },
+  { name: "candy", points: 4 },
+];
+let sum1 = newObjArray.reduce(
+  (accumulator, currentValue) => accumulator + currentValue.points,
+  0
+);
+
+console.log("reduce object:", sum1);
