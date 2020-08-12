@@ -27,5 +27,4 @@ Line 4. counter = counter + 1. We need to look for the variable counter. Before 
 Line 5. We return the content of counter, or the number 1. We destroy the local execution context.
 Back to line 10. The returned value (1) gets assigned to c1.
 Line 11. We repeat steps 10–14. This time, when we look at our closure, we see that the counter variable has a value of 1. It was set in step 12 or line 4 of the program. Its value gets incremented and stored as 2 in the closure of the increment function. And c2 gets assigned 2.
-Line 12. We repeat steps 10–14, c3 gets assigned 3.
-Line 13. We log the content of variables c1, c2 and c3. */
+Line 12. We repeat steps 10–14, c3 gets assigned 3. */
