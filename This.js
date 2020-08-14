@@ -19,3 +19,22 @@ let A = {
 // After that the function A.y() will print ‘y’ followed by returning the object “A” to z().
 // Finally, ‘z’ is printed on console.
 A.x().y().z();
+
+function abc() {
+  let a = 0;
+  return function () {
+    a += 1;
+    return a;
+  };
+}
+
+// directly invoke the function twice but is a separate closure, no backpack is returned
+let a = abc()();
+let b = abc()();
+console.log(b); // 1
+
+// return a backpack to increment variable, so when you call increment again, it found that counter has the value of 1
+const increment = abc();
+let c = increment();
+let d = increment();
+console.log(d); // 2
