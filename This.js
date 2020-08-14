@@ -33,7 +33,8 @@ let a = abc()();
 let b = abc()();
 console.log(b); // 1
 
-// return a backpack to increment variable, so when you call increment again, it found that counter has the value of 1
+// when you create a variable to hold that returned function, a backpack that holds the value of counter is returned too,
+// so when you call increment again, it found that counter has the value of 1
 const increment = abc();
 let c = increment();
 let d = increment();
