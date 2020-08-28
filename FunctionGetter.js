@@ -18,3 +18,8 @@ console.log(obj.latest());
 console.log(obj.getterFunction);
 
 // expected output: "c"
+
+let a,
+  b = 1;
+a = 0;
+console.log(a, b);
